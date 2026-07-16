@@ -85,6 +85,11 @@ int main()
       }
     }
 
+    if (!found)
+    {
+      return 1;
+    }
+
     assert(found);
   }
 
@@ -108,6 +113,11 @@ int main()
       {
         found = true;
       }
+    }
+
+    if (!found)
+    {
+      return 1;
     }
 
     assert(found);
@@ -150,6 +160,11 @@ int main()
       }
     }
 
+    if (!found)
+    {
+      return 1;
+    }
+
     assert(found);
   }
 
@@ -175,6 +190,11 @@ int main()
       {
         found = true;
       }
+    }
+
+    if (!found)
+    {
+      return 1;
     }
 
     assert(found);
@@ -204,6 +224,11 @@ int main()
       }
     }
 
+    if (!found)
+    {
+      return 1;
+    }
+
     assert(found);
   }
 
@@ -229,6 +254,11 @@ int main()
       {
         found = true;
       }
+    }
+
+    if (!found)
+    {
+      return 1;
     }
 
     assert(found);
@@ -259,6 +289,11 @@ int main()
       {
         found = true;
       }
+    }
+
+    if (!found)
+    {
+      return 1;
     }
 
     assert(found);

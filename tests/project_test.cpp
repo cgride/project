@@ -45,6 +45,7 @@ int main()
     cgride::project::Project project("hello");
 
     auto &app = project.executable("app");
+    (void)app;
 
     assert(project.size() == 1);
     assert(!project.empty());
@@ -63,6 +64,9 @@ int main()
     auto &core = project.static_library("core");
     auto &shared = project.shared_library("shared");
     auto &headers = project.interface_library("headers");
+    (void)core;
+    (void)shared;
+    (void)headers;
 
     assert(project.size() == 3);
 
@@ -86,6 +90,7 @@ int main()
     auto &target = project.target(
         "plugin",
         cgride::project::TargetKind::SharedLibrary);
+    (void)target;
 
     assert(project.size() == 1);
     assert(target.name() == "plugin");
@@ -97,6 +102,7 @@ int main()
     cgride::project::Project project("stable");
 
     auto &first = project.executable("first");
+    (void)first;
 
     for (int index = 0; index < 32; ++index)
     {
