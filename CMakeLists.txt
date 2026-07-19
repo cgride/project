@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.22)
 
 project(
   cgride-project
-  VERSION 0.1.0
+  VERSION 0.1.1
   DESCRIPTION "C++ project model with targets, sources, includes and links for Cgride."
   HOMEPAGE_URL "https://github.com/cgride/project"
   LANGUAGES CXX
